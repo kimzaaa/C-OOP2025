@@ -15,3 +15,5 @@ MonoBehaviour:
   ItemName: Item2
   Image: {fileID: 21300000, guid: f573b0ac2d75b4b47a9d9f79584ab004, type: 3}
   CoinToIncrease: 6
+  HpToIncrease: 0
+  type: 1

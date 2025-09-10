@@ -11,7 +11,7 @@ public class Item : MonoBehaviour
     {
         _itemName = itemData.ItemName;
 
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GameObject.Find("InventoryManager");
         inventory = player.GetComponent<Inventory>();
     }
 
@@ -19,8 +19,23 @@ public class Item : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            inventory.itemDatas.Add(itemData);
+            bool placed = false;
+            for (int i = 0; i < inventory.itemDatas.Count; i++)
+            {
+                if (inventory.itemDatas[i] == null)
+                {
+                    inventory.itemDatas[i] = itemData;
+                    placed = true;
+                    break;
+                }
+            }
+            if (!placed)
+            {
+                inventory.itemDatas.Add(itemData);
+            }
+
             Destroy(gameObject);
         }
     }
+
 }
