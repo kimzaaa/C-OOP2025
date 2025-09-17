@@ -7,7 +7,6 @@ public class AddCoinItem : ItemData
 
     public override void Use(PlayerController player)
     {
-        player.TotalMoney += CoinToIncrease;
+        player.UpdateMoney(CoinToIncrease);
     }
 }
-    

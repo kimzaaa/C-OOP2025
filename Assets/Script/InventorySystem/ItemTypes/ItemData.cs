@@ -7,6 +7,5 @@ public abstract class ItemData : ScriptableObject
     public string ItemName;
     public Sprite Image;
 
-    // Every item decides what happens when used
     public abstract void Use(PlayerController player);
 }

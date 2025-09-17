@@ -2278,7 +2278,10 @@ MonoBehaviour:
   jump: 20
   speed: 20
   rotationSpeed: 100
-  TotalMoney: 0
+  OnMoneyChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  MoneyShow: 0
   TotalHP: 100
 --- !u!1 &1687183889
 GameObject:
