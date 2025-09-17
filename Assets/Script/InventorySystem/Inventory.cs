@@ -13,12 +13,15 @@ public class Inventory : MonoBehaviour
     private int index = 0;
     private Slots slot;
     private GameObject _player;
+    private PlayerController _playercon;
 
     public GameObject Player => _player;
 
     void Start()
     {
         _player = GameObject.FindWithTag("Player");
+        _playercon = _player.GetComponent<PlayerController>();
+
     }
 
     void Update()
@@ -27,7 +30,7 @@ public class Inventory : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            itemDatas[index].Use(this);
+            itemDatas[index].Use(_playercon);
             itemDatas[index] = null;
         }
 

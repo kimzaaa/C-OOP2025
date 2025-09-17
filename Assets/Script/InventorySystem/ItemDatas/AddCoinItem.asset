@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc6ff8b2fa4634a4d8dd8736559f624b, type: 3}
-  m_Name: ItemData
+  m_Script: {fileID: 11500000, guid: 10a33db303388cf42b7eba40d387bf9c, type: 3}
+  m_Name: AddCoinItem
   m_EditorClassIdentifier: 
-  ItemName: Item1
+  ItemName: 
   Image: {fileID: 21300000, guid: 77b1ec4b0a7895f4bbe239d4606b8780, type: 3}
-  CoinToIncrease: 5
-  HpToIncrease: 10
-  type: 0
+  CoinToIncrease: 20

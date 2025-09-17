@@ -7,6 +7,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed = 10.0f;
     [SerializeField] private float rotationSpeed = 100.0f;
 
+    public int TotalMoney = 0;
+    public int TotalHP = 100;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
